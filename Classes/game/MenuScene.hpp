@@ -1,9 +1,8 @@
 //
 //  MenuScene.hpp
 //  Escape
-//
 //  Created by ajay on 06/10/16.
-//
+//  @brief This is the Game Menu Scene Class.
 //
 
 #ifndef MenuScene_hpp

@@ -1,9 +1,8 @@
 //
 //  SceneHandler.hpp
 //  Escape
-//
 //  Created by ajay on 06/10/16.
-//
+//  @brief This class is used for switching between different game scenes.
 //
 
 #ifndef SceneHandler_hpp
