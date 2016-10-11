@@ -9,6 +9,7 @@
 #include "SceneHandler.hpp"
 #include "GameCommon.h"
 #include "MenuScene.hpp"
+#include "GameWorldScene.hpp"
 
 
 SceneHandler* SceneHandler::ref_scene_handler_ = nullptr;
@@ -57,8 +58,8 @@ void SceneHandler::SetMenuScene()
 
 void SceneHandler::SetGameWorldScene()
 {
-    GAMELOG("Setting MenuScene");
-    auto scene = MenuScene::createScene();
+    GAMELOG("Setting GameWorldScene");
+    auto scene = GameWorldScene::createScene();
     
     if(scene)
     {

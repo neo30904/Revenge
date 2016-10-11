@@ -8,6 +8,7 @@
 
 #include "GameWorldScene.hpp"
 #include "GameCommon.h"
+#include "GameView.hpp"
 
 cocos2d::Scene* GameWorldScene::createScene()
 {
@@ -22,8 +23,14 @@ bool GameWorldScene::init()
         return false;
     }
     
-    
     GAMELOG("Welcome To GameWorldScene of the game");
+    
+    hud_layer_ = nullptr;
+    game_view_layer_ = nullptr;
+    
+    game_view_layer_ = GameView::CreateLayer();
+    addChild(game_view_layer_);
+    
     return true;
 }
 

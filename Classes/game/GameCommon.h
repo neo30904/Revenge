@@ -6,9 +6,13 @@
 //
 //
 
+#pragma once
+
 #ifndef GameCommon_h
 #define GameCommon_h
 
+
+#include "DataManager.hpp"
 #define DEBUG 1
 
 

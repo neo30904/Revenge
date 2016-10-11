@@ -8,6 +8,7 @@
 
 #include "MenuScene.hpp"
 #include "GameCommon.h"
+#include "SceneHandler.hpp"
 
 cocos2d::Scene* MenuScene::createScene()
 {
@@ -50,6 +51,6 @@ bool MenuScene::init()
 
 void MenuScene::GoToGameWorldScene(cocos2d::Ref *sender)
 {
-    
+    SceneHandler::SharedSceneHandler()->SetGameWorldScene();
 }
 
