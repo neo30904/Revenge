@@ -71,6 +71,11 @@
 		ED545A7C1B68A1F400C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7B1B68A1F400C3958E /* libiconv.dylib */; };
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		F760468E1DABA16C002AD24B /* GameWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F760468C1DABA16C002AD24B /* GameWorldScene.cpp */; };
+		F76046971DABEC81002AD24B /* DataManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F76046951DABEC81002AD24B /* DataManager.cpp */; };
+		F76046991DABEDA6002AD24B /* tiled in Resources */ = {isa = PBXBuildFile; fileRef = F76046981DABEDA6002AD24B /* tiled */; };
+		F760469C1DABF041002AD24B /* GameView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F760469A1DABF041002AD24B /* GameView.cpp */; };
+		F7D6151D1DACA0DE00CCC6E8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7D6151B1DACA0DE00CCC6E8 /* Player.cpp */; };
+		F7D615211DACAA6A00CCC6E8 /* GameElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7D6151F1DACAA6A00CCC6E8 /* GameElement.cpp */; };
 		F7D772641DA8BACB000CAFD6 /* MenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7D772601DA8BACB000CAFD6 /* MenuScene.cpp */; };
 		F7D772651DA8BACB000CAFD6 /* SceneHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7D772621DA8BACB000CAFD6 /* SceneHandler.cpp */; };
 /* End PBXBuildFile section */
@@ -177,6 +182,15 @@
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		F760468C1DABA16C002AD24B /* GameWorldScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameWorldScene.cpp; sourceTree = "<group>"; };
 		F760468D1DABA16C002AD24B /* GameWorldScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameWorldScene.hpp; sourceTree = "<group>"; };
+		F76046951DABEC81002AD24B /* DataManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DataManager.cpp; sourceTree = "<group>"; };
+		F76046961DABEC81002AD24B /* DataManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DataManager.hpp; sourceTree = "<group>"; };
+		F76046981DABEDA6002AD24B /* tiled */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tiled; sourceTree = "<group>"; };
+		F760469A1DABF041002AD24B /* GameView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameView.cpp; sourceTree = "<group>"; };
+		F760469B1DABF041002AD24B /* GameView.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameView.hpp; sourceTree = "<group>"; };
+		F7D6151B1DACA0DE00CCC6E8 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		F7D6151C1DACA0DE00CCC6E8 /* Player.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Player.hpp; sourceTree = "<group>"; };
+		F7D6151F1DACAA6A00CCC6E8 /* GameElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameElement.cpp; sourceTree = "<group>"; };
+		F7D615201DACAA6A00CCC6E8 /* GameElement.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GameElement.hpp; sourceTree = "<group>"; };
 		F7D7725F1DA8BACB000CAFD6 /* GameCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCommon.h; sourceTree = "<group>"; };
 		F7D772601DA8BACB000CAFD6 /* MenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MenuScene.cpp; sourceTree = "<group>"; };
 		F7D772611DA8BACB000CAFD6 /* MenuScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MenuScene.hpp; sourceTree = "<group>"; };
@@ -306,6 +320,7 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F76046981DABEDA6002AD24B /* tiled */,
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
@@ -379,6 +394,8 @@
 		F7D7725E1DA8BACB000CAFD6 /* game */ = {
 			isa = PBXGroup;
 			children = (
+				F76046951DABEC81002AD24B /* DataManager.cpp */,
+				F76046961DABEC81002AD24B /* DataManager.hpp */,
 				F7D7725F1DA8BACB000CAFD6 /* GameCommon.h */,
 				F7D772601DA8BACB000CAFD6 /* MenuScene.cpp */,
 				F7D772611DA8BACB000CAFD6 /* MenuScene.hpp */,
@@ -386,6 +403,12 @@
 				F7D772631DA8BACB000CAFD6 /* SceneHandler.hpp */,
 				F760468C1DABA16C002AD24B /* GameWorldScene.cpp */,
 				F760468D1DABA16C002AD24B /* GameWorldScene.hpp */,
+				F760469A1DABF041002AD24B /* GameView.cpp */,
+				F760469B1DABF041002AD24B /* GameView.hpp */,
+				F7D6151B1DACA0DE00CCC6E8 /* Player.cpp */,
+				F7D6151C1DACA0DE00CCC6E8 /* Player.hpp */,
+				F7D6151F1DACAA6A00CCC6E8 /* GameElement.cpp */,
+				F7D615201DACAA6A00CCC6E8 /* GameElement.hpp */,
 			);
 			path = game;
 			sourceTree = "<group>";
@@ -507,6 +530,7 @@
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
+				F76046991DABEDA6002AD24B /* tiled in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
@@ -538,9 +562,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D615211DACAA6A00CCC6E8 /* GameElement.cpp in Sources */,
 				46880B8819C43A87006E1F66 /* AppDelegate.cpp in Sources */,
+				F76046971DABEC81002AD24B /* DataManager.cpp in Sources */,
 				F7D772641DA8BACB000CAFD6 /* MenuScene.cpp in Sources */,
 				F7D772651DA8BACB000CAFD6 /* SceneHandler.cpp in Sources */,
+				F760469C1DABF041002AD24B /* GameView.cpp in Sources */,
+				F7D6151D1DACA0DE00CCC6E8 /* Player.cpp in Sources */,
 				F760468E1DABA16C002AD24B /* GameWorldScene.cpp in Sources */,
 				46880B8A19C43A87006E1F66 /* HelloWorldScene.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
