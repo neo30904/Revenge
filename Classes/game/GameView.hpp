@@ -13,6 +13,8 @@
 #include "cocos2d.h"
 
 
+class GameElement;
+
 class GameView : public cocos2d::Layer
 {
   
@@ -23,6 +25,9 @@ public:
     static Layer* CreateLayer();
     
     void AddLevel();
+    void UpdateView();
+    void CreatePlayer();
+    
     CREATE_FUNC(GameView);
     
 private:
@@ -30,6 +35,9 @@ private:
     cocos2d::TMXTiledMap * level_map_;
     cocos2d::TMXObjectGroup * map_objects_;
     
-    cocos2d::Sprite* player_sprite_;
+    GameElement *player_;
+    
+    cocos2d::Vec2 viewport_;
+    cocos2d::Vec2 viewport_offset_;
 };
 #endif /* GameView_hpp */
